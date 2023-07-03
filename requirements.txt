@@ -1,3 +1,4 @@
 requests
 selenium
 huggingface_hub
+python-dotenv
