@@ -12,6 +12,10 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+
     - name: Run the script.
       run: |
         python scripts/use_duolingo_module.py -u $DUO_USERNAME -f $HF_TOKEN -j $JWT_TOKEN
